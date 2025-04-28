@@ -1,0 +1,191 @@
+.name {
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.box {
+    border-style: solid;
+    margin-top: 30px; 
+    border-width: 1px; 
+    border-color: grey;
+    border-radius: 10px;
+    width: 500px; 
+    padding: 20px;
+}
+
+.containerI, .containerII, .containerIII {
+    border-style: none;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;  
+    height: 50px;
+}
+
+.containerIII {
+    height: 40px; /* Specific height */
+}
+
+.four, .three, .five {
+    background-color: rgb(46, 46, 233);
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    font-weight: bold;
+}
+
+.four {
+    width: 55px;
+    height: 30px;
+}
+.three, .five {
+    width: 40px;
+    height: 30px;
+}
+
+.second {
+    margin-top: 30px;
+}
+
+.design {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(115, 82, 167);
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    color: azure;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.homepage {
+    margin-left: 20px;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.whatever {
+    height: 40px;
+    width: 1000px;
+    max-width: 100%;
+    margin-right: 100px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.whatever::placeholder {
+    font-size: 17px;
+}
+
+.me {
+    margin-right: 20px;
+    padding: 12px 25px;
+    background-color: rgb(115, 82, 167);
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;  
+}
+
+.sample {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bootsy {
+    height: 44px;
+    width: 49px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.bio {
+    margin-right: 300px;
+}
+
+.instructions {
+    background-color: rgb(59, 102, 180);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Tablets (screen width ≤ 900px) */
+@media (max-width: 900px) {
+    .box {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .design {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .homepage {
+        margin: 0;
+    }
+
+    .whatever {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .me {
+        margin: 10px 0;
+    }
+
+    .bio {
+        margin-right: 50px;
+    }
+
+    .sample {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Phones (screen width ≤ 600px) */
+@media (max-width: 600px) {
+    .design {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .homepage, .me {
+        margin: 10px 0;
+    }
+
+    .whatever {
+        width: 90%;
+    }
+
+    .box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .sample {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bio {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .instructions {
+        margin-top: 10px;
+        width: 80%;
+    }
+}
